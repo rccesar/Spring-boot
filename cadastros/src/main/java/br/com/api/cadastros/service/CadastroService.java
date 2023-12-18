@@ -47,7 +47,7 @@ public class CadastroService {
     // Método para remover produtos
     public ResponseEntity<ResponseModel> remover(long codigo) {
         cr.deleteById(codigo);
-        rm.setMensagem("O produto foi removido com sucesso");
+        rm.setMensagem("A tarefa foi removida com sucesso");
         return new ResponseEntity<ResponseModel>(rm, HttpStatus.OK);
     }
 
